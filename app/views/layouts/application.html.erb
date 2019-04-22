@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QuoteCryption</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Comfortaa:600|Exo:600,800i|Julius+Sans+One|Jura|Limelight|Megrim|Monoton|Orbitron:700|Playfair+Display+SC:700,700i|Poiret+One|Righteous|Ropa+Sans|Sirin+Stencil|Syncopate:700" rel="stylesheet">
+
+    <% if current_board %>
+    <script>
+      window.currentBoard = {
+        "board_id": <%= current_board.id %>,
+        "available_hints": <%= current_board.available_hints %>,
+        "available_hints": "<%= current_board.available_hints %>",
+        "difficulty_level": "<%= current_board.difficulty %>",
+        "currentUserBoard": "<%= current_board.user_board %>",
+        "currentPlaintext": "<%= current_quote_data.content %>",
+        "author": "<%= current_quote_data.author %>",
+        "quoteDetails": "<%= current_quote_data.quote_details %>",
+        "currentCipherText": "<%= current_board.ciphertext %>",
+        "quote_id": <%= current_board.quote_id %>
+        };
+    </script>
+  <% end %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

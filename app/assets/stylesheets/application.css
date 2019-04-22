@@ -1,0 +1,462 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_images
+ *= require_tree .
+ *= require_self
+ */
+
+ /*
+ from palette in images
+ 292b2f dark grey
+ 018185 -- turqoise
+ 40af93 -- green ish
+ 3bbfc3 -- lighter blue
+ d7d5d9 -- chalky blue
+
+ font-family: 'Exo', sans-serif;
+font-family: 'Righteous', cursive;
+font-family: 'Comfortaa', cursive;
+font-family: 'Ropa Sans', sans-serif;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Poiret One', cursive;
+font-family: 'Playfair Display SC', serif;
+font-family: 'Monoton', cursive;
+font-family: 'Audiowide', cursive;
+font-family: 'Julius Sans One', sans-serif;
+font-family: 'Jura', sans-serif;
+font-family: 'Syncopate', sans-serif;
+font-family: 'Limelight', cursive;
+font-family: 'Megrim', cursive;
+font-family: 'Sirin Stencil', cursive;
+
+
+import pics from assets/images -->
+    background-image: url("/assets/cool_border.png");
+  */
+
+ body {
+   margin: 0;
+   padding: 0;
+   background-color: #000d1a;
+   /* background-color: #0b132b; */
+   text-transform: uppercase;
+ }
+
+ .content {
+  height: 100%;
+  width: 100%;
+}
+
+.menu-container {
+  overflow: hidden;
+  background-image: url('https://ak5.picdn.net/shutterstock/videos/12986975/thumb/1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+}
+
+.menu-header {
+  display: inline-flex;
+  background-image: radial-gradient(#018185, #292b2f);
+  border: 3px inset #292b2f;
+  text-align: center;
+  width: 100%;
+}
+#header-left {
+  background-image: url('https://i0.wp.com/www.layer10consulting.com/wp-content/uploads/2017/02/Circuit-Graphic.png?ssl=1');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+  width: 20%;
+}
+
+#header-right {
+  background-image: url('https://i0.wp.com/www.layer10consulting.com/wp-content/uploads/2017/02/Circuit-Graphic.png?ssl=1');
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: right;
+  width: 20%;
+}
+
+#menu-title {
+  color: #d7d5d9;
+  text-shadow: 2px 2px 12px #292b2f;
+  font-size: 55px;
+  width: 60%;
+  font-family: 'Monoton', cursive;
+}
+
+
+
+
+ #dropdown-container {
+  padding: 1%;
+  display: inline;
+}
+
+.grid-container {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+}
+
+.grid-item {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 25px;
+  color: #3bbfc3;
+  border: none;
+}
+
+#lev-opts-container {
+  float: left;
+  width: 20%;
+  margin-top: 3%;
+}
+
+.lev-opts-btn {
+  padding: 5%;
+  color: white;
+  font-size: 18px;
+  border: none;
+  background-image: url('https://library.scalyr.com/2018/07/19175419/Node.js-Hexagon-with-Scalyr-Colors.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0);
+  height: 100px;
+  width: 80px;
+
+}
+
+#row1 {
+  margin-left: 40%;
+}
+#row2 {
+  margin-left: 20%;
+}
+
+#row3 {
+  margin-left: 20%;
+}
+
+#row4 {
+  margin-left: 40%;
+}
+
+
+#btn-container {
+  text-align: center;
+  position: absolute;
+  margin-left: 20%;
+  background-color: rgba(0,128,128, 0.09);
+  border-radius: 50%;
+  padding: 3%;
+  height: 380px;
+  width: 380px;
+  color: #d7d5d9;
+  background-image: url('http://www.sclance.com/pngs/metal-circle-png/metal_circle_png_865142.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#main-label {
+  font-size: 37px;
+  text-shadow: 3px 3px 8px #3bbfc3;
+  margin-top: 35%;
+}
+
+
+
+
+#col-right {
+  float: right;
+  padding-top: 5%;
+  padding-right: 5%;
+  width: 40%;
+  display: inline-block;
+}
+
+#lev-row {
+  float: right;
+  margin-right: 50px;
+  background-image: url("/assets/btn3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 2%;
+  background-size: cover;
+  height: 80px;
+  width: 180px;
+}
+
+#lev-label {
+  text-align: center;
+  font-size: 20px;
+  color: #66FCF1;
+}
+
+#play-row {
+  float: right;
+  margin-top: 25%;
+  padding: 2%;
+  display: grid;
+  grid-template-columns: auto auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#play-btn {
+  background-image: url("/assets/btn4.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 18px;
+  color: #292b2f;
+  text-shadow: 3px 3px 15px #292b2f;
+  height: 100px;
+  width: 130px;
+  text-align: center;
+}
+
+#resume-btn {
+  background-image: url("/assets/btn4.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 18px;
+  color: #292b2f;
+  text-shadow: 3px 3px 15px #292b2f;
+  height: 100px;
+  width: 130px;
+  text-align: center;
+}
+
+
+/*
+from palette in images
+292b2f dark grey
+018185 -- turqoise
+40af93 -- green ish
+3bbfc3 -- lighter blue
+d7d5d9 -- chalky blue
+
+ */
+
+.board-header {
+  display: inline-block;
+  padding-top: 1%;
+  padding-left: 2%;
+  background-image: url("/assets/header_thinner.png");
+  width: 100%;
+  height: 350px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.menu-return-btn {
+  border: 1px outset #292b2f;
+  display: inline-flex;
+  padding: 2%;
+  width: 120px;
+  height: 70px;
+  background-image: url("/assets/ftr-button.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  color: #3bbfc3;
+  font-family: 'Syncopate', sans-serif;
+  justify-content: center;
+}
+
+#left-arrow {
+  padding-top: 15%;
+  height: 25px;
+  width: 20px;
+}
+
+
+.board-container {
+  margin-top: -13%;
+  padding: 3% 5% 0 5%;
+}
+
+.game-board-container {
+  padding: 3%;
+  border-top: 5px outset #018185;
+  border-bottom: 5px inset #018185;
+  border-left: 3px outset #6fffe9;
+  border-right: 3px inset #6fffe9;
+  background-image: url('https://ak2.picdn.net/shutterstock/videos/27202222/thumb/1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.word-container {
+  padding: 3%;
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.tile-container {
+  font-size: 28px;
+  height: 60px;
+  width: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.guess-tile {
+  background-color: rgba(32,178,170, 0.3);
+  border: 1px outset rgba(32,178,170, 0.3);
+  border-radius: 3px;
+  height: 50px;
+  color: white;
+}
+
+#selected {
+  background-color: rgba(255, 255, 204, 0.3)
+}
+
+.ciphertext-tile {
+  color: #6fffe9;
+  font-family: 'Audiowide', cursive;
+}
+
+
+.keyboard-container {
+  text-align: center;
+  padding: 2% 15% 1% 15%;
+}
+
+.keys-container {
+  background-color: rgba(91, 215, 215, 0.4);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 5%;
+  border: 2px outset #6fffe9;
+}
+
+.top-row {
+  padding: 0.5%;
+}
+
+.middle-row {
+  padding: 0.5%;
+}
+
+.bottom-row {
+  padding: 0.5%;
+}
+
+.key {
+  font-size: 25px;
+  font-family: 'Audiowide', cursive;
+  text-transform: uppercase;
+  /* color: #3bbfc3; */
+  color: #6fffe9;
+  background-color: rgba(0, 40, 77, 0.6);
+  text-shadow: 2px 2px 15px #3bbfc3;
+  border-radius: 3px;
+  border: 1.2px outset #3bbfc3;
+  height: 50px;
+  width: 50px;
+}
+
+
+.winner-box-container {
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+}
+
+.winner-box {
+  background-image: url('https://image.freepik.com/free-vector/abstract-glow-dark-circuit-board-technology-background_33403-64.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 80%;
+  padding: 5%;
+}
+
+#quote {
+  color: #018185;
+  background-color: rgba(51, 204, 204, 0.3)
+}
+
+#btn-grp {
+  display: grid;
+  grid-column-gap: 15px;
+  grid-template-columns: auto auto;
+
+}
+
+
+.winner-btn {
+  padding: 2%;
+  background-image: url("/assets/modrn.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: rgba(0,128,128, 0);
+  border-radius: 12px;
+  color: #d7d5d9;
+  border: none;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  text-shadow: 3px 3px 8px #018185;
+  font-size: 18px;
+  font-family: 'Audiowide', cursive;
+  color: #292b2f;
+}
+.winner-btn:hover {
+  width: 220px;
+  opacity: 0.8;
+}
+
+/*
+from palette in images
+292b2f dark grey
+018185 -- turqoise
+40af93 -- green ish
+3bbfc3 -- lighter blue
+d7d5d9 -- chalky blue
+
+font-family: 'Exo', sans-serif;
+font-family: 'Righteous', cursive;
+font-family: 'Comfortaa', cursive;
+font-family: 'Ropa Sans', sans-serif;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Poiret One', cursive;
+font-family: 'Playfair Display SC', serif;
+font-family: 'Monoton', cursive;
+font-family: 'Audiowide', cursive;
+font-family: 'Julius Sans One', sans-serif;
+font-family: 'Jura', sans-serif;
+font-family: 'Syncopate', sans-serif;
+font-family: 'Limelight', cursive;
+font-family: 'Megrim', cursive;
+font-family: 'Sirin Stencil', cursive;
+
+ */
